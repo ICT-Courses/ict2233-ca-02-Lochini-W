@@ -34,14 +34,6 @@ export default function Home() {
         </div>
       </div>
 
-      {/* Initial Hero Content */}
-      <div
-        className="z-10 text-center transition-opacity duration-500"
-        style={{
-          opacity: scrollY < 100 ? 1 : 0, // fades out after scroll
-          transform: `translateY(${scrollY * 0.3}px)`, // smooth upward motion
-          pointerEvents: scrollY < 100 ? "auto" : "none", // disables button when hidden
-        }}
       >
         <h1 className="text-5xl font-bold mb-4">Hi, I’m Lochini 👋</h1>
         <p className="text-xl mb-6 text-gray-600 dark:text-gray-300">
