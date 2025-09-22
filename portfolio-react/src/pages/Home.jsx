@@ -24,17 +24,15 @@ export default function Home() {
         }}
       >
         <div className="flex flex-col items-center justify-center h-full p-8 text-center">
-          <h1 className="text-[clamp(2rem,5vw,4rem)] font-bold mb-4">
-            Hi, I’m Lochini 👋
-          </h1>
-          <p className="text-[clamp(1rem,2.5vw,1.5rem)] mb-6 text-gray-600 dark:text-gray-300">
+          <h1 className="text-4xl font-bold mb-4">Hi, I’m Lochini 👋</h1>
+          <p className="text-xl mb-6 text-gray-600 dark:text-gray-300">
             A passionate web developer
           </p>
           <img
             src={heroPhoto}
             alt="Lochini"
-            className="w-32 sm:w-40 md:w-48 h-32 sm:h-40 md:h-48 rounded-full object-cover shadow-md mb-6"
-          />
+
+       
           <Link
             to="/about"
             className="px-6 py-3 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-600 transition"
@@ -43,6 +41,7 @@ export default function Home() {
           </Link>
         </div>
       </div>
+
 
     </section>
   );
