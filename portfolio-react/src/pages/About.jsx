@@ -46,9 +46,7 @@ export default function About() {
           <p className="leading-relaxed">
             Hi, I’m [Your Name], a passionate web developer with experience in
             building responsive and modern web applications. I enjoy learning
-            new technologies and solving real-world problems through code. I
-            aim to create inspiring and useful projects that help people embrace
-            creativity even in a tech-savvy industry.
+
           </p>
         </section>
 
@@ -77,7 +75,7 @@ export default function About() {
         {/* Technical Skills */}
         <section
           ref={(el) => (sectionsRef.current[2] = el)}
-          className={`bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-md transform transition duration-700 ease-out hover:scale-105 hover:shadow-xl ${styles.hide}`}
+
         >
           <h2 className="text-2xl font-semibold mb-4">Technical Skills</h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
@@ -95,7 +93,7 @@ export default function About() {
         {/* Soft Skills */}
         <section
           ref={(el) => (sectionsRef.current[3] = el)}
-          className={`bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-md transform transition duration-700 ease-out hover:scale-105 hover:shadow-xl ${styles.hide}`}
+
         >
           <h2 className="text-2xl font-semibold mb-4">Soft Skills</h2>
           <ul className="list-disc pl-6 space-y-2">
