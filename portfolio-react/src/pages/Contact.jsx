@@ -5,6 +5,7 @@ export default function Contact() {
   const [formData, setFormData] = useState({ name: "", email: "", message: "" });
   const [errors, setErrors] = useState({});
   const [submitted, setSubmitted] = useState(false);
+  const [submitError, setSubmitError] = useState(""); // for API errors
 
   const sectionsRef = useRef([]);
 
@@ -42,15 +43,31 @@ export default function Contact() {
     return newErrors;
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     const validationErrors = validate();
+
     if (Object.keys(validationErrors).length === 0) {
-      console.log("Form submitted:", formData);
-      setSubmitted(true);
-      setFormData({ name: "", email: "", message: "" });
-      setErrors({});
-      setTimeout(() => setSubmitted(false), 4000); // auto-hide success message
+      try {
+        const response = await fetch("https://formspree.io/f/xblzrqkl", {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(formData),
+        });
+
+        if (response.ok) {
+          setSubmitted(true);
+          setFormData({ name: "", email: "", message: "" });
+          setErrors({});
+          setSubmitError("");
+          setTimeout(() => setSubmitted(false), 4000);
+        } else {
+          const errorText = await response.text();
+          setSubmitError("Failed to send message: " + errorText);
+        }
+      } catch (error) {
+        setSubmitError("Error submitting form: " + error.message);
+      }
     } else {
       setErrors(validationErrors);
       setSubmitted(false);
@@ -67,7 +84,6 @@ export default function Contact() {
         className={`w-full max-w-lg bg-white dark:bg-gray-800 p-8 rounded-2xl shadow-md transform transition duration-700 ease-out hover:scale-105 hover:shadow-xl ${styles.hide}`}
       >
         <form onSubmit={handleSubmit} className="space-y-6">
-          {/* Name */}
           <div>
             <label className="block font-semibold mb-1">Name</label>
             <input
@@ -80,7 +96,6 @@ export default function Contact() {
             {errors.name && <p className="text-red-500 text-sm mt-1">{errors.name}</p>}
           </div>
 
-          {/* Email */}
           <div>
             <label className="block font-semibold mb-1">Email</label>
             <input
@@ -93,7 +108,6 @@ export default function Contact() {
             {errors.email && <p className="text-red-500 text-sm mt-1">{errors.email}</p>}
           </div>
 
-          {/* Message */}
           <div>
             <label className="block font-semibold mb-1">Message</label>
             <textarea
@@ -115,6 +129,8 @@ export default function Contact() {
           >
             {submitted ? "Sent!" : "Send Message"}
           </button>
+
+          {submitError && <p className="text-red-500 text-center mt-2">{submitError}</p>}
         </form>
       </section>
 
