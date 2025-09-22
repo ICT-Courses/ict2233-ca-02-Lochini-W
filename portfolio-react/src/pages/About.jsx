@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from "react";
+import styles from "./About.module.css";
 
 export default function About() {
   const sectionsRef = useRef([]);
@@ -8,15 +9,15 @@ export default function About() {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            entry.target.classList.add("opacity-100", "translate-y-0");
-            entry.target.classList.remove("opacity-0", "translate-y-6");
+            entry.target.classList.add(styles.show);
+            entry.target.classList.remove(styles.hide);
           } else {
-            entry.target.classList.remove("opacity-100", "translate-y-0");
-            entry.target.classList.add("opacity-0", "translate-y-6");
+            entry.target.classList.remove(styles.show);
+            entry.target.classList.add(styles.hide);
           }
         });
       },
-      { threshold: 0.3 } // triggers when 30% of the section is visible
+      { threshold: 0.3 }
     );
 
     sectionsRef.current.forEach((section) => {
@@ -38,30 +39,35 @@ export default function About() {
         {/* Introduction */}
         <section
           ref={(el) => (sectionsRef.current[0] = el)}
-          className="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-md transform transition duration-700 ease-out hover:scale-105 hover:shadow-xl opacity-0 translate-y-6"
+          className={`bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-md transform transition duration-700 ease-out hover:scale-105 hover:shadow-xl ${styles.hide}`}
         >
           <h2 className="text-2xl font-semibold mb-4">Introduction</h2>
           <p className="leading-relaxed">
-
+            Hi! I’m Lochini, a passionate web developer focused on building
+            responsive, modern web applications using React and TailwindCSS.
           </p>
         </section>
 
         {/* Education */}
         <section
           ref={(el) => (sectionsRef.current[1] = el)}
-          className="bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-md transform transition duration-700 ease-out hover:scale-105 hover:shadow-xl opacity-0 translate-y-6"
+          className={`bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-md transform transition duration-700 ease-out hover:scale-105 hover:shadow-xl ${styles.hide}`}
         >
           <h2 className="text-2xl font-semibold mb-4">Education</h2>
           <ul className="space-y-4">
             <li>
-              🎓 <span className="font-bold">[Degree]</span> — [University Name]
-              <p className="text-sm text-gray-600 dark:text-gray-400">
-                [Year – Year]
-              </p>
+              🎓 <span className="font-bold">BSc in Computer Science</span> — University of Sri Jayewardenepura
+              <p className="text-sm text-gray-600 dark:text-gray-400">2023 – Present</p>
             </li>
           </ul>
         </section>
 
+        {/* Skills */}
+        <section
+          ref={(el) => (sectionsRef.current[2] = el)}
+          className={`bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-md transform transition duration-700 ease-out hover:scale-105 hover:shadow-xl ${styles.hide}`}
+        >
+          <h2 className="text-2xl font-semibold mb-4">Skills</h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
             {["HTML", "CSS", "JavaScript", "React", "TailwindCSS"].map((skill) => (
               <span
@@ -73,7 +79,6 @@ export default function About() {
             ))}
           </div>
         </section>
-
       </div>
     </div>
   );
