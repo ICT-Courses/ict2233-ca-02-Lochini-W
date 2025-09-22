@@ -35,19 +35,13 @@ export default function Home() {
         className={`absolute top-0 w-full h-full bg-gray-100 dark:bg-gray-800 shadow-lg flex items-center justify-center ${styles.hide} ${styles.heroPanelEffect}`}
       >
         <div className="flex flex-col items-center justify-center h-full p-8 text-center">
-          <h1 className="mb-4 font-bold text-gray-900 dark:text-white"
-              style={{ fontSize: "clamp(2rem, 5vw, 4rem)" }}>
-            Hi, I’m Lochini 👋
-          </h1>
-          <p className="mb-6 text-gray-600 dark:text-gray-300"
-             style={{ fontSize: "clamp(1rem, 2.5vw, 1.5rem)" }}>
+
             A passionate web developer
           </p>
           <img
             src={heroPhoto}
             alt="Lochini"
-            className="w-40 h-40 rounded-full mb-6 object-cover"
-          />
+
           <Link
             to="/about"
             className="px-6 py-3 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-600 transition"
@@ -57,6 +51,7 @@ export default function Home() {
           </Link>
         </div>
       </div>
+
     </section>
   );
 }
