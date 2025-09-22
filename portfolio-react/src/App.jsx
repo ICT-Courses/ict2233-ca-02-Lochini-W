@@ -5,12 +5,13 @@ import Projects from "./pages/Projects"
 import Contact from "./pages/Contact"
 import NotFound from "./pages/NotFound"
 import Nav from "./components/Nav"
+import Footer from "./components/Footer"   // ⬅️ add this
 
 function App() {
   return (
-    <div className="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-white">
+    <div className="min-h-screen bg-white dark:bg-gray-900 text-gray-900 dark:text-white flex flex-col">
       <Nav />
-      <main className="p-6">
+      <main className="flex-grow p-6">
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -19,6 +20,7 @@ function App() {
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
+      <Footer />   
     </div>
   )
 }

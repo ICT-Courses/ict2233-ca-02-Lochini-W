@@ -36,11 +36,7 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="text-center">
-        <h1 className="text-[clamp(2rem,5vw,4rem)] font-bold mb-4">
-          Hi, I’m Lochini 👋
-        </h1>
-        <p className="text-[clamp(1rem,2.5vw,1.5rem)] mb-6 text-gray-600 dark:text-gray-300">
+
           A passionate web developer
         </p>
         <Link
