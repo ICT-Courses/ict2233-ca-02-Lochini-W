@@ -1,0 +1,15 @@
+.pageWrapper {
+  background-image: url('../assets/images/home_background_initial.jpg'); 
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  transition: background-image 0.5s ease;
+}
+
+/* Optional: allow extra classes for overrides */
+.overrideBackground {
+  background-size: cover;
+  background-position: center;
+}
