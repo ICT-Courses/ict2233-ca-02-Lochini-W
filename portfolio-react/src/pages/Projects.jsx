@@ -35,9 +35,30 @@ export default function Projects() {
   }, []);
 
   const projects = [
-    { title: "🐾 TidyTailApp — Pet Care Organizer", image: tidytailImg, link: "#" },
-    { title: "☕ Café Inventory Management App", image: cafeappImg, link: "#" },
-    { title: "🎬 FilmDB — Local Movie Database", image: filmdbImg, link: "#" },
+    {
+      title: "🐾 TidyTailApp — Pet Care Organizer",
+      image: tidytailImg,
+      description:
+        "A desktop app to track pet vaccinations, vet visits, and daily care tasks. Built with C# and SQL Server.",
+      repo: "https://github.com/ICT-Courses/application-development-ca1-Lochini-W.git", // replace with your repo link
+      demo: "https://drive.google.com/file/d/13czE5FTf09meY4E8qRFUrUOJ_0tZXZz6/view?usp=sharing", // replace with demo link or same as repo
+    },
+    {
+      title: "☕ Café Inventory Management App",
+      image: cafeappImg,
+      description:
+        "Mobile app for café owners to track stock, suppliers, and sales in real time. Built with React Native and Firebase.",
+      repo: "https://github.com/GayashiRamanayake/Code4Change.git",
+      demo: "https://cafe-inventory-demo.vercel.app",
+    },
+    {
+      title: "🎬 FilmDB — Local Movie Database",
+      image: filmdbImg,
+      description:
+        "A searchable movie database with ratings and reviews. Built with React and The Movie DB API.",
+      repo: "https://github.com/ICT-Courses/ict2233-ca-01-Lochini-W.git",
+      demo: "https://filmdb-demo.vercel.app",
+    },
   ];
 
   return (
@@ -57,15 +78,29 @@ export default function Projects() {
               className="w-full h-64 object-cover"
             />
             <div className="p-6">
-              <h2 className="text-2xl font-semibold mb-4">{project.title}</h2>
-              <a
-                href={project.link}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="inline-block px-4 py-2 bg-blue-500 text-white font-medium rounded-lg hover:bg-blue-600 transition"
-              >
-                View Project
-              </a>
+              <h2 className="text-2xl font-semibold mb-2">{project.title}</h2>
+              <p className="text-gray-600 dark:text-gray-400 mb-4">
+                {project.description}
+              </p>
+
+              <div className="flex space-x-4">
+                <a
+                  href={project.repo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-4 py-2 bg-gray-700 text-white font-medium rounded-lg hover:bg-gray-800 transition"
+                >
+                  GitHub
+                </a>
+                <a
+                  href={project.demo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="px-4 py-2 bg-blue-500 text-white font-medium rounded-lg hover:bg-blue-600 transition"
+                >
+                  Live Demo
+                </a>
+              </div>
             </div>
           </div>
         ))}
