@@ -1,0 +1,17 @@
+/* Scroll-in animation */
+.show {
+  opacity: 1;
+  transform: translateY(0);
+  transition: transform 0.7s ease-out, opacity 0.7s ease-out;
+}
+
+.hide {
+  opacity: 0;
+  transform: translateY(1.5rem);
+  transition: transform 0.7s ease-out, opacity 0.7s ease-out;
+}
+
+/* Additional scoped hover/animation overrides if needed */
+.cardHoverEffect {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
