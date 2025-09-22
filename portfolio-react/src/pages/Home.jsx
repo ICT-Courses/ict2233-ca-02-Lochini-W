@@ -34,7 +34,7 @@ export default function Home() {
         </div>
       </div>
 
-      >
+      <div>
         <h1 className="text-5xl font-bold mb-4">Hi, I’m Lochini 👋</h1>
         <p className="text-xl mb-6 text-gray-600 dark:text-gray-300">
           A passionate web developer
