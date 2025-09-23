@@ -28,7 +28,7 @@ export default function Home() {
   }, [scrollY]);
 
   return (
-    <section className=" relative min-h-screen bg-gradient-to-br from-blue-50 to-purple-50 dark:from-gray-900 dark:to-gray-800 text-gray-800 dark:text-gray-200 overflow-hidden px-6 flex flex-col items-center justify-start gap-10 dark-toggle">
+    <section className="relative min-h-screen text-gray-800 dark:text-gray-200 overflow-hidden px-6 flex flex-col items-center justify-start gap-10 dark-toggle">
 
       {/* Hero Image - Centered */}
       <div className=" flex items-center justify-center mt-16">
