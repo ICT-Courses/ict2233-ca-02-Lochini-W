@@ -1,0 +1,39 @@
+/* Dark Mode*/
+body.dark {
+  background-color: #1f2937;
+  color: rgb(0, 0, 0);
+}
+
+body.dark .nav {
+  background-color: #111827;
+}
+
+body.dark .link,
+body.dark .dark-toggle {
+  color: rgb(0, 0, 0);
+}
+
+body.dark .link.active {
+  background-color: #374151;
+}
+
+body.dark .dark-toggle {
+  background-color: #b2cefd;
+}
+
+
+body.dark .dark-toggle .s1 {
+  background-color: #9ec3ff; /* dark button background */
+  color: rgb(0, 0, 0);               /* dark mode text */
+}
+
+body.dark .dark-toggle .s2 {
+  background-color: #a7c9ff; /* dark button background */
+  color: rgb(0, 0, 0);               /* dark mode text */
+}
+
+body.dark .dark-toggle .s3 {
+  background-color: #c3d9fa; /* dark button background */
+  color: rgb(0, 0, 0);               /* dark mode text */
+}
+
