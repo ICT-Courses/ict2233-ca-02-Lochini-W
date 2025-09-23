@@ -2,7 +2,7 @@ import React from "react";
 
 export default function ProjectCard({ title, image, description, repo, demo }) {
   return (
-    <div className="bg-white dark:bg-gray-800 rounded-2xl shadow-md overflow-hidden transform hover:scale-105 hover:shadow-xl">
+    <div className="s2 bg-white dark:bg-gray-800 rounded-2xl shadow-md overflow-hidden transform hover:scale-105 hover:shadow-2xl">
       <img src={image} alt={title} className="w-full h-64 object-cover" />
       <div className="p-6">
         <h2 className="text-2xl font-semibold mb-2">{title}</h2>
@@ -12,7 +12,7 @@ export default function ProjectCard({ title, image, description, repo, demo }) {
             href={repo}
             target="_blank"
             rel="noopener noreferrer"
-            className="px-4 py-2 bg-gray-700 text-white font-medium rounded-lg hover:bg-gray-800 transition"
+            className="s3 px-4 py-2 bg-gray-700 text-white font-medium rounded-lg hover:bg-gray-800 transition shadow-2xl"
           >
             GitHub
           </a>
@@ -20,7 +20,7 @@ export default function ProjectCard({ title, image, description, repo, demo }) {
             href={demo}
             target="_blank"
             rel="noopener noreferrer"
-            className="px-4 py-2 bg-blue-500 text-white font-medium rounded-lg hover:bg-blue-600 transition"
+            className=" s1 px-4 py-2 bg-blue-500 text-white font-medium rounded-lg hover:bg-blue-600 transition shadow-xl"
           >
             Live Demo
           </a>
