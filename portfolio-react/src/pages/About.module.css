@@ -1,0 +1,28 @@
+/* Scroll-in animation */
+.show {
+  opacity: 1;
+  transform: translateY(0);
+  transition: transform 0.7s ease-out, opacity 0.7s ease-out;
+}
+
+.hide {
+  opacity: 0;
+  transform: translateY(1.5rem);
+  transition: transform 0.7s ease-out, opacity 0.7s ease-out;
+}
+
+/* Scoped hover/animation overrides for cards */
+.cardHoverEffect {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Responsive typography using clamp() */
+.responsiveHeading {
+  font-size: clamp(1.75rem, 2vw + 1rem, 3rem); /* For h1 */
+  line-height: 1.2;
+}
+
+.responsiveSubHeading {
+  font-size: clamp(1.25rem, 1.5vw + 0.5rem, 2rem); /* For h2 */
+  line-height: 1.3;
+}
