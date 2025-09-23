@@ -34,14 +34,14 @@ export default function About() {
   const softSkills = ["Teamwork & Collaboration", "Problem-Solving", "Adaptability", "Time Management"];
 
   return (
-    <div className="min-h-screen bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200 px-6 py-12">
+    <div className="s3 min-h-screen bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200 px-6 py-12 dark-toggle">
       <h1 className={`text-center font-bold mb-12 ${styles.responsiveHeading}`}>About Me</h1>
 
       <div className="max-w-4xl mx-auto space-y-12">
         {/* Introduction */}
         <section
           ref={(el) => (sectionsRef.current[0] = el)}
-          className={`bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-md transform hover:scale-105 hover:shadow-xl ${styles.hide} ${styles.cardHoverEffect}`}
+          className={`s2 bg-white dark:bg-gray-800 dark-toggle p-6 rounded-2xl shadow-md transform hover:scale-105 hover:shadow-xl ${styles.hide} ${styles.cardHoverEffect}`}
         >
           <h2 className={`font-semibold mb-4 ${styles.responsiveSubHeading}`}>Introduction</h2>
           <p className="leading-relaxed">
@@ -53,7 +53,7 @@ export default function About() {
         {/* Education */}
         <section
           ref={(el) => (sectionsRef.current[1] = el)}
-          className={`bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-md transform hover:scale-105 hover:shadow-xl ${styles.hide} ${styles.cardHoverEffect}`}
+          className={`s2 bg-white dark:bg-gray-800 dark-toggle p-6 rounded-2xl shadow-md transform hover:scale-105 hover:shadow-xl ${styles.hide} ${styles.cardHoverEffect}`}
         >
           <h2 className={`font-semibold mb-4 ${styles.responsiveSubHeading}`}>Education</h2>
           <ul className="space-y-4">
@@ -69,12 +69,12 @@ export default function About() {
         {/* Technical Skills */}
         <section
           ref={(el) => (sectionsRef.current[2] = el)}
-          className={`bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-md transform hover:scale-105 hover:shadow-xl ${styles.hide} ${styles.cardHoverEffect}`}
+          className={`s2 bg-white dark:bg-gray-800 dark-toggle p-6 rounded-2xl shadow-md transform hover:scale-105 hover:shadow-xl ${styles.hide} ${styles.cardHoverEffect}`}
         >
           <h2 className={`font-semibold mb-4 ${styles.responsiveSubHeading}`}>Technical Skills</h2>
           <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
             {technicalSkills.map((skill, idx) => (
-              <span key={idx} className="px-3 py-2 bg-gray-100 dark:bg-gray-700 rounded-lg text-center">
+              <span key={idx} className=" px-3 py-2 bg-gray-100 dark:bg-gray-700 s1 rounded-lg text-center shadow-inner">
                 {skill}
               </span>
             ))}
@@ -84,7 +84,7 @@ export default function About() {
         {/* Soft Skills */}
         <section
           ref={(el) => (sectionsRef.current[3] = el)}
-          className={`bg-white dark:bg-gray-800 p-6 rounded-2xl shadow-md transform hover:scale-105 hover:shadow-xl ${styles.hide} ${styles.cardHoverEffect}`}
+          className={`s2 bg-white dark:bg-gray-800 dark-toggle p-6 rounded-2xl shadow-md transform hover:scale-105 hover:shadow-xl ${styles.hide} ${styles.cardHoverEffect}`}
         >
           <h2 className={`font-semibold mb-4 ${styles.responsiveSubHeading}`}>Soft Skills</h2>
           <ul className="list-disc pl-6 space-y-2">
