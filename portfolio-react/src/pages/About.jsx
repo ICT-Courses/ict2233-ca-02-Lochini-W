@@ -45,7 +45,7 @@ export default function About() {
         >
           <h2 className={`font-semibold mb-4 ${styles.responsiveSubHeading}`}>Introduction</h2>
           <p className="leading-relaxed">
-            Hi, I’m [Your Name], a passionate web developer with experience in building responsive and modern web applications.
+            Hi, I’m Lochini, a passionate web developer with experience in building responsive and modern web applications.
             I enjoy learning new technologies and solving real-world problems through code.
           </p>
         </section>
