@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import tidytailImg from "../assets/images/tidytail.jpg";
 import cafeappImg from "../assets/images/cafeapp.jpg";
-import filmdbImg from "../assets/images/filmDBicon.jpg";
+import filmdbImg from "../assets/images/filmDBicon.png";
 import ProjectCard from "../components/ProjectCard";
 import styles from "./Projects.module.css";
 
