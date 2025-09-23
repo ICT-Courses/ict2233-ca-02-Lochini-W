@@ -13,11 +13,22 @@ export default function ProjectCard({ title, image, description, repo, demo }) {
             href={repo}
             target="_blank"
             rel="noopener noreferrer"
-            className="s3 px-4 py-2 bg-gray-700 text-white font-medium rounded-lg hover:bg-gray-800 transition shadow-2xl"
+            className="s3 px-4 py-2 bg-gray-700 text-white font-medium rounded-lg hover:bg-gray-800 transition shadow-2xl border border-black"
           >
             GitHub
           </a>
 
+          {/* Demo button */}
+          {demo && (
+            <a
+              href={demo}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="s3 px-4 py-2 bg-purple-600 text-white font-medium rounded-lg hover:bg-purple-700 transition shadow-2xl border border-black"
+            >
+              Live Demo
+            </a>
+          )}
         </div>
       </div>
     </div>
