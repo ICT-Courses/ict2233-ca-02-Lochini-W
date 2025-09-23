@@ -42,7 +42,7 @@ export default function Home() {
       {/* Hero Text Panel - Appears on Scroll */}
       <div
         ref={panelRef}
-        className={`s2 w-full max-w-xl flex flex-col items-center justify-center p-8 rounded-2xl shadow-xl bg-white dark:bg-gray-700 transition-transform duration-700 ${styles.hide} ${styles.heroPanelEffect} mt-4 mb-8`}
+        className={`s2 w-full max-w-xl flex flex-col items-center justify-center p-8 rounded-2xl shadow-xl bg-white dark:bg-gray-700 transition-transform duration-700 ${styles.hide} ${styles.heroPanelEffect} mt-4 mb-8 border-[1px] border-[rgba(204, 204, 204, 1)]`}
       >
         <h1 className="text-4xl sm:text-5xl font-bold mb-4 text-center">
           Hi, I'm Lochini
