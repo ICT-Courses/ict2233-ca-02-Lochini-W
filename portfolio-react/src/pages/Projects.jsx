@@ -63,7 +63,7 @@ export default function Projects() {
   ];
 
   return (
-    <div className="min-h-screen px-6 py-12 bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+    <div className="s3 min-h-screen px-6 py-12 bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200">
       <h1 className="text-4xl font-bold mb-12 text-center">My Projects</h1>
       <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
         {projects.map((proj, index) => (
