@@ -1,6 +1,6 @@
 import React, { useState, useRef, useEffect } from "react";
 import { Link } from "react-router-dom";
-import heroPhoto from "../assets/hero-photo.jpg";
+import heroPhoto from "../assets/Lochini-photo.jpeg";
 import styles from "./Home.module.css";
 
 export default function Home() {
