@@ -60,7 +60,7 @@ export default function About() {
             {education.map((edu, idx) => (
               <li key={idx}>
                 🎓 <span className="font-bold">{edu.degree}</span> — {edu.school}
-                <p className="text-sm text-gray-600 dark:text-gray-400">{edu.year}</p>
+                <p className="text-sm text-gray-600 dark:text-gray-400 dark-toggle2">{edu.year}</p>
               </li>
             ))}
           </ul>
