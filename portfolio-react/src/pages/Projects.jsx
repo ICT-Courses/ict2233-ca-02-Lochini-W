@@ -50,7 +50,7 @@ export default function Projects() {
       description:
         "Mobile app for café owners to track stock, suppliers, and sales in real time. Built with React Native and Firebase.",
       repo: "https://github.com/GayashiRamanayake/Code4Change.git",
-      demo: "https://cafe-inventory-demo.vercel.app",
+      demo: null,
     },
     {
       title: "🎬 FilmDB — Local Movie Database",
@@ -58,20 +58,25 @@ export default function Projects() {
       description:
         "A searchable movie database with ratings and reviews. Built with React and The Movie DB API.",
       repo: "https://github.com/ICT-Courses/ict2233-ca-01-Lochini-W.git",
-      demo: "https://filmdb-demo.vercel.app",
+      demo: null,
     },
   ];
 
   return (
     <div className="s3 min-h-screen px-6 py-12 bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200">
       <h1 className="text-4xl font-bold mb-12 text-center">My Projects</h1>
-      <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+      <div className="grid sm:grid-cols-3 gap-12 max-w-5xl mx-auto">
         {projects.map((proj, index) => (
           <div
             key={index}
             ref={(el) => (projectsRef.current[index] = el)}
-            className={styles.hide}
+            className={`${styles.projectWrapper} ${styles.hide}`}
           >
+            <div
+              className={`${styles.bgShape} ${styles[`bg${index % 5}`]} ${
+                index % 2 === 0 ? styles.tiltLeft : styles.tiltRight
+              }`}
+            ></div>
             <ProjectCard {...proj} />
           </div>
         ))}

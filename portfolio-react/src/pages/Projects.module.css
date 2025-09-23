@@ -11,7 +11,49 @@
   transition: transform 0.7s ease-out, opacity 0.7s ease-out;
 }
 
-/* Additional scoped hover/animation overrides if needed */
-.cardHoverEffect {
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+/* Wrapper to hold shape + card */
+.projectWrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Shape behind card */
+.bgShape {
+  position: absolute;
+  inset: 0;
+  border-radius: 12px;
+  z-index: 0;
+}
+
+/* Tilt variations */
+.tiltLeft {
+  transform: rotate(-3deg);
+}
+.tiltRight {
+  transform: rotate(3deg);
+}
+
+/* 5 background colors */
+.bg0 {
+  background-color: #ff9f43;
+}
+.bg1 {
+  background-color: #feca57;
+}
+.bg2 {
+  background-color: #a29bfe;
+}
+.bg3 {
+  background-color: #fd79a8;
+}
+.bg4 {
+  background-color: #55efc4;
+}
+
+/* Ensure card sits above shape */
+.projectWrapper > *:not(.bgShape) {
+  position: relative;
+  z-index: 1;
 }
