@@ -28,30 +28,37 @@ export default function Home() {
   }, [scrollY]);
 
   return (
-    <section className="relative h-screen bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200 overflow-hidden px-6 flex items-center justify-center">
-      {/* Hero Panel */}
+    <section className="relative h-screen bg-gradient-to-br from-blue-50 to-purple-50 dark:from-gray-900 dark:to-gray-800 text-gray-800 dark:text-gray-200 overflow-hidden px-6 flex flex-col lg:flex-row items-center justify-center gap-10">
+      
+      {/* Hero Text Panel */}
       <div
         ref={panelRef}
-        className={`absolute top-0 w-full h-full bg-gray-100 dark:bg-gray-800 shadow-lg flex items-center justify-center ${styles.hide} ${styles.heroPanelEffect}`}
+        className={`flex-1 flex flex-col items-center lg:items-start justify-center p-8 rounded-2xl shadow-xl bg-white dark:bg-gray-700 transition-transform duration-700 ${styles.hide} ${styles.heroPanelEffect}`}
       >
-        <div className="flex flex-col items-center justify-center h-full p-8 text-center">
-
-            A passionate web developer
-          </p>
-          <img
-            src={heroPhoto}
-            alt="Lochini"
-
-          <Link
-            to="/about"
-            className="px-6 py-3 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-600 transition"
-            style={{ fontSize: "clamp(0.9rem, 2vw, 1.1rem)" }}
-          >
-            Learn More About Me
-          </Link>
-        </div>
+        <h1 className="text-4xl sm:text-5xl font-bold mb-4 text-center lg:text-left">
+          Hi, I'm Lochini
+        </h1>
+        <p className="text-lg sm:text-xl mb-6 text-center lg:text-left">
+          A passionate web developer crafting interactive & modern web experiences.
+        </p>
+        <Link
+          to="/about"
+          className="px-6 py-3 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-600 transition-all"
+          style={{ fontSize: "clamp(0.9rem, 2vw, 1.1rem)" }}
+        >
+          Learn More About Me
+        </Link>
       </div>
 
+      {/* Hero Image */}
+      <div className="flex-1 flex items-center justify-center">
+        <img
+          src={heroPhoto}
+          alt="Lochini"
+          className="w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 rounded-full shadow-2xl object-cover"
+        />
+      </div>
+      
     </section>
   );
 }
