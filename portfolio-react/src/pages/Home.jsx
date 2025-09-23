@@ -28,12 +28,12 @@ export default function Home() {
   }, [scrollY]);
 
   return (
-    <section className="relative h-screen bg-gradient-to-br from-blue-50 to-purple-50 dark:from-gray-900 dark:to-gray-800 text-gray-800 dark:text-gray-200 overflow-hidden px-6 flex flex-col lg:flex-row items-center justify-center gap-10">
+    <section className="s3 relative h-screen bg-gradient-to-br from-blue-50 to-purple-50 dark:from-gray-900 dark:to-gray-800 text-gray-800 dark:text-gray-200 overflow-hidden px-6 flex flex-col lg:flex-row items-center justify-center gap-10 dark-toggle">
       
       {/* Hero Text Panel */}
       <div
         ref={panelRef}
-        className={`flex-1 flex flex-col items-center lg:items-start justify-center p-8 rounded-2xl shadow-xl bg-white dark:bg-gray-700 transition-transform duration-700 ${styles.hide} ${styles.heroPanelEffect}`}
+        className={`s2 flex-1 flex flex-col items-center lg:items-start justify-center p-8 rounded-2xl shadow-xl bg-white dark:bg-gray-700 transition-transform duration-700 ${styles.hide} ${styles.heroPanelEffect}`}
       >
         <h1 className="text-4xl sm:text-5xl font-bold mb-4 text-center lg:text-left">
           Hi, I'm Lochini
@@ -43,7 +43,7 @@ export default function Home() {
         </p>
         <Link
           to="/about"
-          className="px-6 py-3 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-600 transition-all"
+          className="s3 px-6 py-3 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-600 transition-all shadow-2xl"
           style={{ fontSize: "clamp(0.9rem, 2vw, 1.1rem)" }}
         >
           Learn More About Me
