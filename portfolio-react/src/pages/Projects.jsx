@@ -1,4 +1,5 @@
-import React, { useEffect, useRef } from "react";
+// Projects.jsx
+import React, { useEffect, useRef, useState } from "react";
 import tidytailImg from "../assets/images/tidytail.jpg";
 import cafeappImg from "../assets/images/cafeapp.jpg";
 import filmdbImg from "../assets/images/filmDBicon.png";
@@ -7,6 +8,7 @@ import styles from "./Projects.module.css";
 
 export default function Projects() {
   const projectsRef = useRef([]);
+  const [showBubble, setShowBubble] = useState({});
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -62,10 +64,21 @@ export default function Projects() {
     },
   ];
 
+  const handleDemoClick = (index) => {
+    if (!projects[index].demo) {
+      setShowBubble((prev) => ({ ...prev, [index]: true }));
+      setTimeout(() => {
+        setShowBubble((prev) => ({ ...prev, [index]: false }));
+      }, 2000);
+    }
+  };
+
   return (
-    <div className="s3 min-h-screen px-6 py-12 bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200">
-      <h1 className="text-4xl font-bold mb-12 text-center">My Projects</h1>
-      <div className="grid sm:grid-cols-3 gap-12 max-w-5xl mx-auto">
+    <div className="s3 min-h-screen px-4 py-12 bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200">
+      <h1 className="text-4xl sm:text-5xl font-extrabold mb-12 text-center text-gray-900 dark:text-gray-100">
+        My Projects
+      </h1>
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
         {projects.map((proj, index) => (
           <div
             key={index}
@@ -77,7 +90,11 @@ export default function Projects() {
                 index % 2 === 0 ? styles.tiltLeft : styles.tiltRight
               }`}
             ></div>
-            <ProjectCard {...proj} />
+            <ProjectCard
+              {...proj}
+              onDemoClick={() => handleDemoClick(index)}
+              showBubble={showBubble[index]}
+            />
           </div>
         ))}
       </div>
