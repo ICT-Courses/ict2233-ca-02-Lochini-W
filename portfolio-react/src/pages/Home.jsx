@@ -28,17 +28,26 @@ export default function Home() {
   }, [scrollY]);
 
   return (
-    <section className="s3 relative h-screen bg-gradient-to-br from-blue-50 to-purple-50 dark:from-gray-900 dark:to-gray-800 text-gray-800 dark:text-gray-200 overflow-hidden px-6 flex flex-col lg:flex-row items-center justify-center gap-10 dark-toggle">
-      
-      {/* Hero Text Panel */}
+    <section className=" relative min-h-screen bg-gradient-to-br from-blue-50 to-purple-50 dark:from-gray-900 dark:to-gray-800 text-gray-800 dark:text-gray-200 overflow-hidden px-6 flex flex-col items-center justify-start gap-10 dark-toggle">
+
+      {/* Hero Image - Centered */}
+      <div className=" flex items-center justify-center mt-16">
+        <img
+          src={heroPhoto}
+          alt="Lochini"
+          className="w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 rounded-full shadow-2xl object-cover"
+        />
+      </div>
+
+      {/* Hero Text Panel - Appears on Scroll */}
       <div
         ref={panelRef}
-        className={`s2 flex-1 flex flex-col items-center lg:items-start justify-center p-8 rounded-2xl shadow-xl bg-white dark:bg-gray-700 transition-transform duration-700 ${styles.hide} ${styles.heroPanelEffect}`}
+        className={`s2 w-full max-w-xl flex flex-col items-center justify-center p-8 rounded-2xl shadow-xl bg-white dark:bg-gray-700 transition-transform duration-700 ${styles.hide} ${styles.heroPanelEffect} mt-4 mb-8`}
       >
-        <h1 className="text-4xl sm:text-5xl font-bold mb-4 text-center lg:text-left">
+        <h1 className="text-4xl sm:text-5xl font-bold mb-4 text-center">
           Hi, I'm Lochini
         </h1>
-        <p className="text-lg sm:text-xl mb-6 text-center lg:text-left">
+        <p className="text-lg sm:text-xl mb-6 text-center">
           A passionate web developer crafting interactive & modern web experiences.
         </p>
         <Link
@@ -50,15 +59,6 @@ export default function Home() {
         </Link>
       </div>
 
-      {/* Hero Image */}
-      <div className="flex-1 flex items-center justify-center">
-        <img
-          src={heroPhoto}
-          alt="Lochini"
-          className="w-64 h-64 sm:w-80 sm:h-80 md:w-96 md:h-96 rounded-full shadow-2xl object-cover"
-        />
-      </div>
-      
     </section>
   );
 }
