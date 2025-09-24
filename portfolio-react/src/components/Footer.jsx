@@ -2,6 +2,8 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FaLinkedin } from "react-icons/fa";
 import { FaEnvelope } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+
 
 export default function Footer() {
   return (
@@ -24,7 +26,8 @@ export default function Footer() {
           {/* Social Icons */}
           <div className="flex gap-3">
             <a href="https://www.linkedin.com/in/buvaneswari-lochini-weerasinghe-296106381/" className="hover:text-blue-700 transition"><FaLinkedin size={24} /></a>
-            <a href="mailto:lochini.edenfields@gmail.com" className="hover:text-blue-700 transition"><FaEnvelope size={24} /></a>
+            <a href="mailto:lochini.edenfields@gmail.com" className="hover:text-blue-700 transition"><FaEnvelope  size={24} /></a>
+            <a href="https://github.com/Lochini-W" className="hover:text-blue-700 transition"><FaGithub size={24} /></a>
           </div>
         </div>
       </div>
