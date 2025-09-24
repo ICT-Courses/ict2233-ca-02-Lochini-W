@@ -59,7 +59,7 @@ export default function Home() {
             Hi, I'm Lochini Weerasinghe
           </h1>
           <p className="text-lg sm:text-xl mb-6 text-center text-gray-600 dark:text-gray-300 leading-relaxed dark-toggle2">
-            I am an undegraduate student, aspiring to harness computer science through learning and experince. So that I can build creative solutions for the very intereting real-world problems.
+            An undergraduate student passionate about computer science, learning through experience and building creative solutions to real-world challenges.
           </p>
           <button
             onClick={() => navigate("/about")}
