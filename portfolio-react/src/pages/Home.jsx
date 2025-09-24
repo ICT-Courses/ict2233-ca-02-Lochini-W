@@ -59,7 +59,7 @@ export default function Home() {
             Hi, I'm Lochini Weerasinghe
           </h1>
           <p className="text-lg sm:text-xl mb-6 text-center text-gray-600 dark:text-gray-300 leading-relaxed dark-toggle2">
-            An undergradute student who aspires to persue and explore the world of technology. To design, and build projects, that are both creative and useful. 
+
           </p>
           <button
             onClick={() => navigate("/about")}

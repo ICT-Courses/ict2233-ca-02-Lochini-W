@@ -27,6 +27,7 @@ export default function About() {
   // Dynamic data (for future scalability)
   const education = [
     { degree: "Bachelor of Science in Computer Science", school: "University of Sri Jayewardenepura", year: "2024 – 2027" },
+    
     { degree: "Schooling", school: "Visakha Vidyalaya", year: "2009 – 2022" },
   ];
 
@@ -52,13 +53,6 @@ export default function About() {
             Introduction
           </h2>
           <p className="leading-relaxed text-base sm:text-lg text-center">
-            Hi, I’m Lochini, a passionate undergraduate who wishes to harness computer science through the experiences of building responsive and modern applications.
-            I enjoy learning new technologies and solving real-world problems through code.
-            As of now my goal is to learn to create intuitive, beautiful, and efficient digital experiences.
-            I aspire to become an experienced project manager but I also do not want to limit myself to it and do my best to harness other areas. 
-            Becuase there are so many other interesting areas that I would love to learn
-            A few 'other' of my areas of interest are Cyber security, AI and Blockchain. 
-            Howeverr as an undergraduate I still have much to learn and progress. 
           </p>
         </section>
 
