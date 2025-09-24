@@ -12,7 +12,7 @@ export default function ProjectCard({
   showBubble,
 }) {
   return (
-    <div className="s2 relative bg-white dark:bg-gray-800 rounded-3xl shadow-xl overflow-hidden flex flex-col h-full transform transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl">
+    <div className="s2 relative bg-white dark:bg-gray-800 rounded-3xl shadow-xl overflow-hidden flex flex-col h-full transform transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl border-[1px] border-[rgba(204, 204, 204, 1)]">
       <div className="relative w-full h-48 overflow-hidden">
         <img
           src={image}
@@ -32,7 +32,7 @@ export default function ProjectCard({
             href={repo}
             target="_blank"
             rel="noopener noreferrer"
-            className="w-full text-center px-6 py-3 bg-gray-700 text-white font-semibold rounded-full transition-colors duration-200 hover:bg-gray-800 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900"
+            className="w-full text-center px-6 py-3 bg-gradient-to-r from-emerald-600 to-blue-600 text-white font-semibold rounded-full transition-colors duration-200 hover:from-emerald-700 hover:to-blue-700 focus:outline-none focus:ring-2 focus:ring-gray-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900"
           >
             GitHub
           </a>
@@ -41,14 +41,14 @@ export default function ProjectCard({
               href={demo}
               target="_blank"
               rel="noopener noreferrer"
-              className="s4 w-full text-center px-6 py-3 bg-indigo-600 text-white font-semibold rounded-full transition-colors duration-200 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900 border-[1px] border-[rgba(204, 204, 204, 1)]"
+              className="s4 w-full text-center px-6 py-3 bg-indigo-600 text-white font-semibold rounded-full transition-colors duration-200 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2 dark:focus:ring-offset-gray-900 shadow-lg"
             >
               Demo Video
             </a>
           ) : (
             <button
               onClick={onDemoClick}
-              className="s1 relative w-full text-center px-6 py-3 bg-gray-400 text-gray-800 font-semibold rounded-full transition-colors duration-200 hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-300 focus:ring-offset-2 dark:focus:ring-offset-gray-900 border-[1px] border-[rgba(204, 204, 204, 1)]"
+              className="s1 relative w-full text-center px-6 py-3 bg-gray-400 text-gray-800 font-semibold rounded-full transition-colors duration-200 hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-300 focus:ring-offset-2 dark:focus:ring-offset-gray-900"
             >
               Demo Video
               {showBubble && (
