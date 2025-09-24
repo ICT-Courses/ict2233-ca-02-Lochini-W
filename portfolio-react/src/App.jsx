@@ -5,7 +5,7 @@ import Projects from "./pages/Projects"
 import Contact from "./pages/Contact"
 import NotFound from "./pages/NotFound"
 import Nav from "./components/Nav"
-import Footer from "./components/Footer"   // ⬅️ add this
+import Footer from "./components/Footer"  
 
 function App() {
   return (

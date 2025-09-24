@@ -40,8 +40,7 @@ export default function Projects() {
     {
       title: "🐾 TidyTailApp — Pet Care Organizer",
       image: tidytailImg,
-      description:
-        "A desktop app to track pet vaccinations, vet visits, and daily care tasks. Built with C# and SQL Server.",
+      description:"A desktop app to track pet vaccinations, vet visits, and daily care tasks. Built with C# and SQL Server.Created with the goal of allowing multipet owners to be able to manage a large ammount of pets(with the intention of further improving it to target bigger industries such as Farms)",
       repo: "https://github.com/ICT-Courses/application-development-ca1-Lochini-W.git",
       demo: "https://drive.google.com/file/d/13czE5FTf09meY4E8qRFUrUOJ_0tZXZz6/view?usp=sharing",
     },
@@ -49,7 +48,7 @@ export default function Projects() {
       title: "☕ Café Inventory Management App",
       image: cafeappImg,
       description:
-        "Mobile app for café owners to track stock, suppliers, and sales in real time. Built with React Native and Firebase.",
+        "Mobile app for café owners to track stock, suppliers, and sales in real time. Built with React Native and Firebase. The Neko and Kopi cafe was using a  manual method to mamage their inventory and therfore me and my group of peers were tasked with creating a mobile application which was efficient and effective and eased the tasks the staff had to do manually when it came to inventory management",
       repo: "https://github.com/GayashiRamanayake/Code4Change.git",
       demo: "https://drive.google.com/file/d/1kH8h_ozwCrH-EpXCgpMvzIY2K8M8FtLJ/view?usp=sharing",
     },
@@ -57,7 +56,7 @@ export default function Projects() {
       title: "🎬 FilmDB — Local Movie Database",
       image: filmdbImg,
       description:
-        "A searchable movie database with ratings and reviews. Built with React and The Movie DB API.",
+        "A searchable movie database. Built with React and The Movie DB API. The goal of this web appilcation was to create a database of movies that have slipped the mind of other. Ones that are not mainstream but worth the watch. There is a recomendation form which will allow people to recomend their favourite movies. Would like to further improve it by adding a rating system.",
       repo: "https://github.com/ICT-Courses/ict2233-ca-01-Lochini-W.git",
       demo: null,
     },
