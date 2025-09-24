@@ -53,6 +53,10 @@ export default function About() {
             Introduction
           </h2>
           <p className="leading-relaxed text-base sm:text-lg text-center">
+            Hi I am Lochini an ungraduate student who aspires to learn and improve her skills with reagrds to computer science. 
+            I want to persue the creative path of building creative technnological solutions for real-world problems.
+            Therfore aspiring to godown the path of being a developer. However my main goal would be to become a experinced project manager but will not limit myself to only that router.
+            Becuase there are so many more creative and interesting things a person can learn when it comes to this industry. 
           </p>
         </section>
 
