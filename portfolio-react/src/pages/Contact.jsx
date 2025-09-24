@@ -81,7 +81,7 @@ export default function Contact() {
       {/* Contact Form */}
       <section
         ref={(el) => (sectionsRef.current[0] = el)}
-        className={` s2 w-full max-w-lg bg-white dark:bg-gray-800 p-8 dark-toggle rounded-2xl shadow-2xl transform transition duration-700 ease-out hover:scale-105 hover:shadow-2xl ${styles.hide}`}
+        className={` s4 w-full max-w-lg bg-white dark:bg-gray-800 p-8 dark-toggle rounded-2xl shadow-2xl transform transition duration-700 ease-out hover:scale-105 hover:shadow-2xl ${styles.hide}`}
       >
         <form onSubmit={handleSubmit} className="space-y-6">
           <div>
@@ -124,7 +124,7 @@ export default function Contact() {
             type="submit"
             disabled={submitted}
             className={`s3 w-full py-3 rounded-lg font-semibold transition ${
-              submitted ? "bg-green-500 cursor-default" : "bg-indigo-500 hover:bg-indigo-600 text-white"
+              submitted ? "bg-green-500 cursor-default" : "bg-gradient-to-r from-emerald-600 to-blue-600 hover:from-emerald-700 hover:to-blue-700text-white"
             }`}
           >
             {submitted ? "Sent!" : "Send Message"}
@@ -137,7 +137,7 @@ export default function Contact() {
       {/* Social Links */}
       <section
         ref={(el) => (sectionsRef.current[1] = el)}
-        className={`s2 flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6 w-full max-w-lg bg-white dark:bg-gray-800 dark-toggle p-6 rounded-2xl shadow-xl transform transition duration-700 ease-out hover:scale-105 hover:shadow-xl ${styles.hide}`}
+        className={`s4 flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6 w-full max-w-lg bg-white dark:bg-gray-800 dark-toggle p-6 rounded-2xl shadow-xl transform transition duration-700 ease-out hover:scale-105 hover:shadow-xl ${styles.hide}`}
       >
         <a
           href="https://www.linkedin.com/in/buvaneswari-lochini-weerasinghe-296106381/"

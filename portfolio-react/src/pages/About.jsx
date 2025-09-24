@@ -49,10 +49,10 @@ export default function About() {
           ref={(el) => (sectionsRef.current[0] = el)}
           className={`s3 p-8 bg-white dark:bg-gray-800 rounded-3xl shadow-lg transform transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl ${styles.hide} md:col-span-2 flex flex-col justify-center`}
         >
-          <h2 className={`${styles.responsiveSubHeading} font-bold mb-4 text-indigo-600 dark:text-indigo-400`}>
+          <h2 className={`${styles.responsiveSubHeading} font-bold mb-7 text-center bg-gradient-to-r from-emerald-600 to-blue-600 bg-clip-text text-transparent dark-toggle`}>
             Introduction
           </h2>
-          <p className="leading-relaxed text-base sm:text-lg">
+          <p className="leading-relaxed text-base sm:text-lg text-center">
             Hi, I’m Lochini, a passionate undergraduate who wishes to be a developer with experience in building responsive and modern applications.
             I enjoy learning new technologies and solving real-world problems through code. My goal is to create intuitive,
             beautiful, and efficient digital experiences.
@@ -64,7 +64,7 @@ export default function About() {
           ref={(el) => (sectionsRef.current[1] = el)}
           className={`s3 p-8 bg-white dark:bg-gray-800 rounded-3xl shadow-lg transform transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl ${styles.hide} flex flex-col`}
         >
-          <h2 className={`${styles.responsiveSubHeading} font-bold mb-4 text-indigo-600 dark:text-indigo-400`}>
+          <h2 className={`${styles.responsiveSubHeading} font-bold mb-4 text-center bg-gradient-to-r from-emerald-600 to-blue-600 bg-clip-text text-transparent dark-toggle`}>
             Education
           </h2>
           <ul className="space-y-6">
@@ -84,7 +84,7 @@ export default function About() {
           ref={(el) => (sectionsRef.current[2] = el)}
           className={`s3 p-8 bg-white dark:bg-gray-800 rounded-3xl shadow-lg transform transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl ${styles.hide}`}
         >
-          <h2 className={`${styles.responsiveSubHeading} font-bold mb-4 text-indigo-600 dark:text-indigo-400`}>
+          <h2 className={`${styles.responsiveSubHeading} font-bold mb-4 text-center bg-gradient-to-r from-emerald-600 to-blue-600 bg-clip-text text-transparent dark-toggle`}>
             Technical Skills
           </h2>
           <div className="flex flex-wrap gap-2">
@@ -104,7 +104,7 @@ export default function About() {
           ref={(el) => (sectionsRef.current[3] = el)}
           className={`s3 p-8 bg-white dark:bg-gray-800 rounded-3xl shadow-lg transform transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl ${styles.hide}`}
         >
-          <h2 className={`${styles.responsiveSubHeading} font-bold mb-4 text-indigo-600 dark:text-indigo-400`}>
+          <h2 className={`${styles.responsiveSubHeading} font-bold mb-4 text-center bg-gradient-to-r from-emerald-600 to-blue-600 bg-clip-text text-transparent dark-toggle`}>
             Soft Skills
           </h2>
           <ul className="space-y-2">
@@ -122,7 +122,7 @@ export default function About() {
           ref={(el) => (sectionsRef.current[4] = el)}
           className={`s3 p-8 bg-white dark:bg-gray-800 rounded-3xl shadow-lg transform transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl ${styles.hide}`}
         >
-          <h2 className={`${styles.responsiveSubHeading} font-bold mb-4 text-indigo-600 dark:text-indigo-400`}>
+          <h2 className={`${styles.responsiveSubHeading} font-bold mb-4 text-center bg-gradient-to-r from-emerald-600 to-blue-600 bg-clip-text text-transparent dark-toggle`}>
             Additional Achievements
           </h2>
           <ul className="space-y-2">
