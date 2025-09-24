@@ -55,7 +55,7 @@ export default function Home() {
               : 'opacity-0 translate-y-8 scale-95'
           }`}
         >
-          <h1 className="text-4xl sm:text-5xl font-bold mb-4 text-center bg-gradient-to-r bg-clip-text text-transparent dark-toggle">
+          <h1 className="text-4xl sm:text-5xl p-5 font-bold mb-4 text-center bg-gradient-to-r from-emerald-600 to-blue-600 bg-clip-text text-transparent dark-toggle">
             Hi, I'm Lochini Weerasinghe
           </h1>
           <p className="text-lg sm:text-xl mb-6 text-center text-gray-600 dark:text-gray-300 leading-relaxed dark-toggle2">

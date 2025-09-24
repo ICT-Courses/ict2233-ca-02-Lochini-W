@@ -44,3 +44,8 @@ body.dark .dark-toggle .s4 {
   background-color: #82b1fe; 
   color: rgb(0, 0, 0);              
 }
+
+/* Fix for gradient text - ADD THIS to your existing CSS */
+body.dark .dark-toggle.text-transparent {
+  color: transparent !important;
+}
