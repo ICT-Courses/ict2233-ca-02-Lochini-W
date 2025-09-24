@@ -81,7 +81,7 @@ export default function Contact() {
       {/* Contact Form */}
       <section
         ref={(el) => (sectionsRef.current[0] = el)}
-        className={` s4 w-full max-w-lg bg-white dark:bg-gray-800 p-8 dark-toggle rounded-2xl shadow-2xl transform transition duration-700 ease-out hover:scale-105 hover:shadow-2xl ${styles.hide}`}
+        className={` s3 w-full max-w-lg bg-white dark:bg-gray-800 p-8 dark-toggle rounded-2xl shadow-2xl transform transition duration-700 ease-out hover:scale-105 hover:shadow-2xl ${styles.hide}`}
       >
         <form onSubmit={handleSubmit} className="space-y-6">
           <div>
@@ -137,7 +137,7 @@ export default function Contact() {
       {/* Social Links */}
       <section
         ref={(el) => (sectionsRef.current[1] = el)}
-        className={`s4 flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6 w-full max-w-lg bg-white dark:bg-gray-800 dark-toggle p-6 rounded-2xl shadow-xl transform transition duration-700 ease-out hover:scale-105 hover:shadow-xl ${styles.hide}`}
+        className={`s3 flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-6 w-full max-w-lg bg-white dark:bg-gray-800 dark-toggle p-6 rounded-2xl shadow-xl transform transition duration-700 ease-out hover:scale-105 hover:shadow-xl ${styles.hide}`}
       >
         <a
           href="https://www.linkedin.com/in/buvaneswari-lochini-weerasinghe-296106381/"
