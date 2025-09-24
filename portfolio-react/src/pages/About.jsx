@@ -1,3 +1,4 @@
+// About.jsx
 import React, { useEffect, useRef } from "react";
 import styles from "./About.module.css";
 
@@ -26,41 +27,62 @@ export default function About() {
 
   // Dynamic data (for future scalability)
   const education = [
-    { degree: "Bachelor of Science in Computer Science", school: "University Name", year: "2022 – 2025" },
-    { degree: "High School Diploma", school: "High School Name", year: "2017 – 2022" },
+    { degree: "Bachelor of Science in Computer Science", school: "University of Sri Jayewardenepura", year: "2024 – 2027" },
+    { degree: "Schooling", school: "Visakha Vidyalaya", year: "2009 – 2022" },
   ];
 
-  const technicalSkills = ["HTML", "CSS", "JavaScript", "React", "TailwindCSS"];
-  const softSkills = ["Teamwork & Collaboration", "Problem-Solving", "Adaptability", "Time Management"];
+  const technicalSkills = [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "React",
+    "TailwindCSS",
+    "C#",
+    "SQL Server",
+    "Git",
+    "Python",
+    "Github"
+  ];
+
+  const softSkills = ["Public Speaking", "Teamwork & Collaboration", "Problem-Solving", "Adaptability", "Time Management", , , "Conflict Resolution"];
 
   return (
-    <div className="s3 min-h-screen bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-gray-200 px-6 py-12 dark-toggle">
-      <h1 className={`text-center font-bold mb-12 ${styles.responsiveHeading}`}>About Me</h1>
+    <div className="min-h-screen px-4 py-12 bg-gradient-to-br text-gray-800 dark:text-gray-200">
+      <h1 className={`${styles.responsiveHeading} text-center font-extrabold mb-16 text-gray-900 dark:text-gray-100 dark-toggle`}>
+        About Me
+      </h1>
 
-      <div className="max-w-4xl mx-auto space-y-12">
+      <div className="max-w-6xl mx-auto grid gap-8 md:grid-cols-2 lg:grid-cols-3 auto-rows-fr">
         {/* Introduction */}
         <section
           ref={(el) => (sectionsRef.current[0] = el)}
-          className={`s2 bg-white dark:bg-gray-800 dark-toggle p-6 rounded-2xl shadow-md transform hover:scale-105 hover:shadow-xl ${styles.hide} ${styles.cardHoverEffect}`}
+          className={`s3 p-8 bg-white dark:bg-gray-800 rounded-3xl shadow-lg transform transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl ${styles.hide} md:col-span-2 flex flex-col justify-center`}
         >
-          <h2 className={`font-semibold mb-4 ${styles.responsiveSubHeading}`}>Introduction</h2>
-          <p className="leading-relaxed">
-            Hi, I’m Lochini, a passionate web developer with experience in building responsive and modern web applications.
-            I enjoy learning new technologies and solving real-world problems through code.
+          <h2 className={`${styles.responsiveSubHeading} font-bold mb-4 text-indigo-600 dark:text-indigo-400`}>
+            Introduction
+          </h2>
+          <p className="leading-relaxed text-base sm:text-lg">
+            Hi, I’m Lochini, a passionate undergraduate who wishes to be a developer with experience in building responsive and modern applications.
+            I enjoy learning new technologies and solving real-world problems through code. My goal is to create intuitive,
+            beautiful, and efficient digital experiences.
           </p>
         </section>
 
         {/* Education */}
         <section
           ref={(el) => (sectionsRef.current[1] = el)}
-          className={`s2 bg-white dark:bg-gray-800 dark-toggle p-6 rounded-2xl shadow-md transform hover:scale-105 hover:shadow-xl ${styles.hide} ${styles.cardHoverEffect}`}
+          className={`s3 p-8 bg-white dark:bg-gray-800 rounded-3xl shadow-lg transform transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl ${styles.hide} flex flex-col`}
         >
-          <h2 className={`font-semibold mb-4 ${styles.responsiveSubHeading}`}>Education</h2>
-          <ul className="space-y-4">
+          <h2 className={`${styles.responsiveSubHeading} font-bold mb-4 text-indigo-600 dark:text-indigo-400`}>
+            Education
+          </h2>
+          <ul className="space-y-6">
             {education.map((edu, idx) => (
-              <li key={idx}>
-                🎓 <span className="font-bold">{edu.degree}</span> — {edu.school}
-                <p className="text-sm text-gray-600 dark:text-gray-400">{edu.year}</p>
+              <li key={idx} className="relative pl-6">
+                <span className="text-indigo-500 mr-2 text-xl">🎓</span>
+                <p className="font-semibold text-lg">{edu.degree}</p>
+                <p className="text-sm text-gray-500 dark:text-gray-400 dark-toggle2">{edu.school}</p>
+                <p className="text-sm text-gray-500 dark:text-gray-400 dark-toggle2">{edu.year}</p>
               </li>
             ))}
           </ul>
@@ -69,12 +91,17 @@ export default function About() {
         {/* Technical Skills */}
         <section
           ref={(el) => (sectionsRef.current[2] = el)}
-          className={`s2 bg-white dark:bg-gray-800 dark-toggle p-6 rounded-2xl shadow-md transform hover:scale-105 hover:shadow-xl ${styles.hide} ${styles.cardHoverEffect}`}
+          className={`s3 p-8 bg-white dark:bg-gray-800 rounded-3xl shadow-lg transform transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl ${styles.hide}`}
         >
-          <h2 className={`font-semibold mb-4 ${styles.responsiveSubHeading}`}>Technical Skills</h2>
-          <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+          <h2 className={`${styles.responsiveSubHeading} font-bold mb-4 text-indigo-600 dark:text-indigo-400`}>
+            Technical Skills
+          </h2>
+          <div className="flex flex-wrap gap-2">
             {technicalSkills.map((skill, idx) => (
-              <span key={idx} className=" px-3 py-2 bg-gray-100 dark:bg-gray-700 s1 rounded-lg text-center shadow-inner">
+              <span
+                key={idx}
+                className="s1 px-4 py-2 bg-gray-200 dark:bg-gray-700 rounded-full text-sm font-medium text-gray-700 dark:text-gray-300 transition-colors duration-200 hover:bg-gray-300 dark:hover:bg-gray-600"
+              >
                 {skill}
               </span>
             ))}
@@ -84,12 +111,17 @@ export default function About() {
         {/* Soft Skills */}
         <section
           ref={(el) => (sectionsRef.current[3] = el)}
-          className={`s2 bg-white dark:bg-gray-800 dark-toggle p-6 rounded-2xl shadow-md transform hover:scale-105 hover:shadow-xl ${styles.hide} ${styles.cardHoverEffect}`}
+          className={`s3 p-8 bg-white dark:bg-gray-800 rounded-3xl shadow-lg transform transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl ${styles.hide}`}
         >
-          <h2 className={`font-semibold mb-4 ${styles.responsiveSubHeading}`}>Soft Skills</h2>
-          <ul className="list-disc pl-6 space-y-2">
+          <h2 className={`${styles.responsiveSubHeading} font-bold mb-4 text-indigo-600 dark:text-indigo-400`}>
+            Soft Skills
+          </h2>
+          <ul className="space-y-2">
             {softSkills.map((skill, idx) => (
-              <li key={idx}>{skill}</li>
+              <li key={idx} className="flex items-center">
+                <span className="text-indigo-500 mr-2 text-xl">✨</span>
+                <span>{skill}</span>
+              </li>
             ))}
           </ul>
         </section>

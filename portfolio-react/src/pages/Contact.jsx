@@ -124,7 +124,7 @@ export default function Contact() {
             type="submit"
             disabled={submitted}
             className={`s3 w-full py-3 rounded-lg font-semibold transition ${
-              submitted ? "bg-green-500 cursor-default" : "bg-blue-500 hover:bg-blue-600 text-white"
+              submitted ? "bg-green-500 cursor-default" : "bg-indigo-500 hover:bg-indigo-600 text-white"
             }`}
           >
             {submitted ? "Sent!" : "Send Message"}
@@ -151,7 +151,7 @@ export default function Contact() {
           href="https://github.com/Lochini-W"
           target="_blank"
           rel="noopener noreferrer"
-          className="text-gray-800 dark:text-gray-200 font-semibold hover:underline text-center"
+          className="text-gray-800 dark:text-indigo-500 font-semibold hover:underline text-center"
         >
           GitHub
         </a>

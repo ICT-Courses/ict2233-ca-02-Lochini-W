@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FaFacebook, FaTwitter, FaInstagram, FaLinkedin } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 
 export default function Footer() {
   return (
-    <footer className="bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 py-6 mt-2 border-t-2 s3">
+    <footer className="bg-gray-100 dark:bg-gray-800 text-gray-700 dark:text-gray-300 py-6 mt-2 shadow-2xl s3">
       <div className="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row justify-between items-center gap-4">
         
         {/* Left Side */}
@@ -22,10 +22,7 @@ export default function Footer() {
 
           {/* Social Icons */}
           <div className="flex gap-3">
-            <a href="#" className="hover:text-blue-600 transition"><FaFacebook size={24} /></a>
-            <a href="#" className="hover:text-blue-400 transition"><FaTwitter size={24} /></a>
-            <a href="#" className="hover:text-pink-500 transition"><FaInstagram size={24} /></a>
-            <a href="#" className="hover:text-blue-700 transition"><FaLinkedin size={24} /></a>
+            <a href="https://www.linkedin.com/in/buvaneswari-lochini-weerasinghe-296106381/" className="hover:text-blue-700 transition"><FaLinkedin size={24} /></a>
           </div>
         </div>
       </div>

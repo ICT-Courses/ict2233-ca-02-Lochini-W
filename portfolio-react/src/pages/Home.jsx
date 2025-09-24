@@ -42,17 +42,17 @@ export default function Home() {
       {/* Hero Text Panel - Appears on Scroll */}
       <div
         ref={panelRef}
-        className={`s2 w-full max-w-xl flex flex-col items-center justify-center p-8 rounded-2xl shadow-xl bg-white dark:bg-gray-700 transition-transform duration-700 ${styles.hide} ${styles.heroPanelEffect} mt-4 mb-8`}
+        className={`s2 w-full max-w-xl flex flex-col items-center justify-center p-8 rounded-2xl shadow-xl bg-white dark:bg-gray-700 transition-transform duration-700 ${styles.hide} ${styles.heroPanelEffect} mt-4 mb-8 border-[1px] border-[rgba(204, 204, 204, 1)]`}
       >
         <h1 className="text-4xl sm:text-5xl font-bold mb-4 text-center">
-          Hi, I'm Lochini
+          Hi, I'm Lochini Weerasinghe
         </h1>
         <p className="text-lg sm:text-xl mb-6 text-center">
-          A passionate web developer crafting interactive & modern web experiences.
+          A passionate undergraduate with the goal of becoming developer and to craft interactive & modern web experiences.
         </p>
         <Link
           to="/about"
-          className="s3 px-6 py-3 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-600 transition-all shadow-2xl"
+          className="s3 px-6 py-3 bg-indigo-600 text-white font-semibold rounded-lg hover:bg-blue-600 transition-all shadow-2xl"
           style={{ fontSize: "clamp(0.9rem, 2vw, 1.1rem)" }}
         >
           Learn More About Me
