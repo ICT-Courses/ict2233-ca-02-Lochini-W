@@ -59,6 +59,11 @@ export default function Home() {
             Hi, I'm Lochini Weerasinghe
           </h1>
           <p className="text-lg sm:text-xl mb-6 text-center text-gray-600 dark:text-gray-300 leading-relaxed dark-toggle2">
+            Hi I am Lochini an ungraduate student who aspires to learn and improve her skills with reagrds to computer science. 
+            I want to persue the creative path of building creative technnological solutions for real-world problems.
+            Therfore aspiring to godown the path of being a developer. However my main goal would be to become a experinced project manager but will not limit myself to only that router.
+            Becuase there are so many more creative and interesting things a person can learn when it comes to this industry. 
+            
 
           </p>
           <button
