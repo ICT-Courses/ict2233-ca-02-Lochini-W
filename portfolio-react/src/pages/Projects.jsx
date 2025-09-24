@@ -1,4 +1,3 @@
-// Projects.jsx
 import React, { useEffect, useRef, useState } from "react";
 import tidytailImg from "../assets/images/tidytail.jpg";
 import cafeappImg from "../assets/images/cafeapp.jpg";
