@@ -31,20 +31,11 @@ export default function About() {
     { degree: "Schooling", school: "Visakha Vidyalaya", year: "2009 – 2022" },
   ];
 
-  const technicalSkills = [
-    "HTML",
-    "CSS",
-    "JavaScript",
-    "React",
-    "TailwindCSS",
-    "C#",
-    "SQL Server",
-    "Git",
-    "Python",
-    "Github"
-  ];
+  const technicalSkills = ["HTML","CSS","JavaScript","React","TailwindCSS", "C#","SQL Server","Git","Python","Github"];
 
   const softSkills = ["Public Speaking", "Teamwork & Collaboration", "Problem-Solving", "Adaptability", "Time Management", , , "Conflict Resolution"];
+
+  const additionalAchievments = [ "Public Speaking","President's Guide","Participate in All Island Poetry Recitation","Winner of Light of Asia"];
 
   return (
     <div className="min-h-screen px-4 py-12 bg-gradient-to-br text-gray-800 dark:text-gray-200">
@@ -125,6 +116,26 @@ export default function About() {
             ))}
           </ul>
         </section>
+
+        {/* Additional Achievements */}
+        <section
+          ref={(el) => (sectionsRef.current[4] = el)}
+          className={`s3 p-8 bg-white dark:bg-gray-800 rounded-3xl shadow-lg transform transition-all duration-300 hover:scale-[1.02] hover:shadow-2xl ${styles.hide}`}
+        >
+          <h2 className={`${styles.responsiveSubHeading} font-bold mb-4 text-indigo-600 dark:text-indigo-400`}>
+            Additional Achievements
+          </h2>
+          <ul className="space-y-2">
+            {additionalAchievments.map((item, idx) => (
+              <li key={idx} className="flex items-center">
+                <span className="text-indigo-500 mr-2 text-xl">✨</span>
+                <span>{item}</span>
+              </li>
+            ))}
+          </ul>
+        </section>
+
+
       </div>
     </div>
   );
