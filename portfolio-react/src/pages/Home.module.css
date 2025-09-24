@@ -1,0 +1,17 @@
+/* Smooth fade + slide animation with slower transition */
+.show {
+  opacity: 1;
+  transform: translateY(0);
+  transition: transform 3.0s ease-out, opacity 1.5s ease-out;
+}
+
+.hide {
+  opacity: 0;
+  transform: translateY(2rem);
+  transition: transform 3.0s ease-out, opacity 1.5s ease-out;
+}
+
+/* Scoped hover/animation for hero panel */
+.heroPanelEffect {
+  transition: transform 1.0s ease, box-shadow 0.5s ease;
+}
