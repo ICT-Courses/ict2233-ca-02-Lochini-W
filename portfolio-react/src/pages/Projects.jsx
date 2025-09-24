@@ -52,7 +52,7 @@ export default function Projects() {
       description:
         "Mobile app for café owners to track stock, suppliers, and sales in real time. Built with React Native and Firebase.",
       repo: "https://github.com/GayashiRamanayake/Code4Change.git",
-      demo: null,
+      demo: "https://drive.google.com/file/d/1kH8h_ozwCrH-EpXCgpMvzIY2K8M8FtLJ/view?usp=sharing",
     },
     {
       title: "🎬 FilmDB — Local Movie Database",
