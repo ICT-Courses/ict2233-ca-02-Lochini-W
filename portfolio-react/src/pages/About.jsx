@@ -28,6 +28,7 @@ export default function About() {
   // Dynamic data (for future scalability)
   const education = [
     { degree: "Bachelor of Science in Computer Science", school: "University of Sri Jayewardenepura", year: "2024 – 2027" },
+    
     { degree: "Schooling", school: "Visakha Vidyalaya", year: "2009 – 2022" },
   ];
 
@@ -53,9 +54,9 @@ export default function About() {
             Introduction
           </h2>
           <p className="leading-relaxed text-base sm:text-lg text-center">
-            Hi, I’m Lochini, a passionate undergraduate who wishes to be a developer with experience in building responsive and modern applications.
-            I enjoy learning new technologies and solving real-world problems through code. My goal is to create intuitive,
-            beautiful, and efficient digital experiences.
+            Hi, I’m Lochini, a passionate undergraduate aspiring to be a project manager, with experience in leading projects and building responsive, modern applications. 
+            While project management is my primary focus, I aim to broaden my skills and explore other areas of technology and innovation without strapping and limiting myself to one route. 
+            I enjoy learning new tools, solving real-world problems, and creating intuitive, efficient, and impactful digital experiences.
           </p>
         </section>
 
