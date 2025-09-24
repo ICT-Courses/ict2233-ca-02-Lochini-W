@@ -48,7 +48,7 @@ export default function Projects() {
       title: "☕ Café Inventory Management App",
       image: cafeappImg,
       description:
-        "Mobile app for café owners to track stock, suppliers, and sales in real time. Built with React Native and Firebase. The Neko and Kopi cafe was using a  manual method to mamage their inventory and therfore me and my group of peers were tasked with creating a mobile application which was efficient and effective and eased the tasks the staff had to do manually when it came to inventory management",
+        "Mobile app for café owners to track stock, suppliers, and sales in real time. Built with React Native and Firebase. The Neko and Kopi cafe was using a  manual method to manage their inventory and therefore me and the members of my group were tasked with creating a mobile application which is efficient and effective and eases the tasks the staff had to do manually when it came to inventory management",
       repo: "https://github.com/GayashiRamanayake/Code4Change.git",
       demo: "https://drive.google.com/file/d/1kH8h_ozwCrH-EpXCgpMvzIY2K8M8FtLJ/view?usp=sharing",
     },
@@ -56,7 +56,7 @@ export default function Projects() {
       title: "🎬 FilmDB — Local Movie Database",
       image: filmdbImg,
       description:
-        "A searchable movie database. Built with React and The Movie DB API. The goal of this web appilcation was to create a database of movies that have slipped the mind of other. Ones that are not mainstream but worth the watch. There is a recomendation form which will allow people to recomend their favourite movies. Would like to further improve it by adding a rating system.",
+        "A searchable movie database. Built with React. The goal of this web application is to create a website that showcases movie recomendations that would slipped the minds of others. Movies that are not mainstream but worth the watch. There is a recomendation form which's purposse is to allow people to recomend their favourite movies. Would like to further improve it by adding a rating system.",
       repo: "https://github.com/ICT-Courses/ict2233-ca-01-Lochini-W.git",
       demo: null,
     },

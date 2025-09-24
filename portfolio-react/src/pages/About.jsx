@@ -31,7 +31,7 @@ export default function About() {
     { degree: "Schooling", school: "Visakha Vidyalaya", year: "2009 – 2022" },
   ];
 
-  const techSkills = ["HTML","CSS","Python","SQL","PHP","C#","Git","Github","JavaScript-learning","React-learning","TailwindCSS-learning" ];
+  const techSkills = ["HTML","CSS","Python","SQL","PHP","C#","Git","Github","JavaScript","React","TailwindCSS" ];
 
   const softSkills = ["Public Speaking", "Teamwork & Collaboration", "Problem-Solving", "Adaptability", "Time Management", "Conflict Resolution"];
 
@@ -53,10 +53,14 @@ export default function About() {
             Introduction
           </h2>
           <p className="leading-relaxed text-base sm:text-lg text-center">
-            Hi I am Lochini an ungraduate student who aspires to learn and improve her skills with reagrds to computer science. 
-            I want to persue the creative path of building creative technnological solutions for real-world problems.
-            Therfore aspiring to godown the path of being a developer. However my main goal would be to become a experinced project manager but will not limit myself to only that router.
-            Becuase there are so many more creative and interesting things a person can learn when it comes to this industry. 
+            Hi, I am Lochini. An ungraduate student who aspires to learn and improve her skills with regards to computer science. 
+            I am currently learning and testing the creative path of building creative technnological solutions for real-world problems.
+            However my current goal would be to become a experienced project manager but will not limit myself to only that route.
+            After all there are so many more creative and interesting things a person can learn when it comes to this ever-evolving industry and area of study.
+            A few of my other areas of interest would be cyber security, AI/ML and Blockchain. 
+            Therefore my goal may change as I learn more interesting things and I might persue something much bigger. 
+            Everything must start somewhere. 
+            
           </p>
         </section>
 

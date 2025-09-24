@@ -47,7 +47,7 @@ export default function ProjectCard({
           ) : (
             <button
               onClick={onDemoClick}
-              className="s1 relative w-full text-center px-6 py-3 bg-gray-400 text-gray-800 font-semibold rounded-full transition-colors duration-200 hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-300 focus:ring-offset-2 dark:focus:ring-offset-gray-900"
+              className="relative w-full text-center px-6 py-3 bg-gray-400 text-gray-800 font-semibold rounded-full transition-colors duration-200 hover:bg-gray-500 focus:outline-none focus:ring-2 focus:ring-gray-300 focus:ring-offset-2 dark:focus:ring-offset-gray-900"
             >
               Demo Video
               {showBubble && (

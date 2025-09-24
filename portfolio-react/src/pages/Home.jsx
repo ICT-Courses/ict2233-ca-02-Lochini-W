@@ -103,7 +103,7 @@ export default function Home() {
               </div>
               <h3 className="text-xl font-semibold mb-3">Hands-on Project</h3>
               <p className="text-gray-600 dark:text-gray-300 dark-toggle2">
-                Developing projects in web development, design, and programming to practice my skills and explore different technologies
+                Developing, designing, and programming to practice my skills and explore different technologies.
               </p>
             </div>
             <div className="s2 bg-white/50 dark:bg-gray-800/50 backdrop-blur-sm rounded-xl p-6 shadow-lg">
