@@ -75,7 +75,7 @@ export default function Projects() {
 
   return (
     <div className="s3 min-h-screen px-4 py-12 bg-gray-100 dark:bg-gray-900 text-gray-800 dark:text-gray-200">
-      <h1 className="text-4xl sm:text-5xl font-extrabold mb-12 text-center text-gray-900 dark:text-gray-100">
+      <h1 className="text-4xl sm:text-5xl font-extrabold mb-12 text-center text-gray-900 dark:text-gray-100 dark-toggle2">
         My Projects
       </h1>
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-7xl mx-auto">
