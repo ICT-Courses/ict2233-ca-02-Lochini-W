@@ -31,11 +31,11 @@ export default function About() {
     { degree: "Schooling", school: "Visakha Vidyalaya", year: "2009 – 2022" },
   ];
 
-  const technicalSkills = ["HTML","CSS","JavaScript","React","TailwindCSS", "C#","SQL Server","Git","Python","Github"];
+  const techSkills = ["HTML","CSS","Python","SQL","PHP","C#","Git","Github","JavaScript-learning","React-learning","TailwindCSS-learning" ];
 
-  const softSkills = ["Public Speaking", "Teamwork & Collaboration", "Problem-Solving", "Adaptability", "Time Management", , , "Conflict Resolution"];
+  const softSkills = ["Public Speaking", "Teamwork & Collaboration", "Problem-Solving", "Adaptability", "Time Management", "Conflict Resolution"];
 
-  const additionalAchievments = [ "Public Speaking","President's Guide","Participate in All Island Poetry Recitation","Winner of Light of Asia"];
+  const additionalAchievments = [ "Public Speaking","President's Guide","All Island Poetry Recitation","Light of Asia"];
 
   return (
     <div className="min-h-screen px-4 py-12 bg-gradient-to-br text-gray-800 dark:text-gray-200">
@@ -53,10 +53,6 @@ export default function About() {
             Introduction
           </h2>
           <p className="leading-relaxed text-base sm:text-lg text-center">
-            Hi, I’m Lochini, a passionate undergraduate aspiring to be a Project Manager, with experience in leading projects and building responsive, modern applications. 
-            While project management is my primary focus, I am currently proficient in it and also have a strong interest in Cybersecurity. 
-            I aim to broaden my skills in this area, as well as explore other fields of technology and innovation, without limiting myself to a single path. 
-            I enjoy learning new tools, solving real-world problems, and creating intuitive, efficient, and impactful digital experiences.
           </p>
         </section>
 
@@ -89,7 +85,7 @@ export default function About() {
             Technical Skills
           </h2>
           <div className="flex flex-wrap gap-2">
-            {technicalSkills.map((skill, idx) => (
+            {techSkills.map((skill, idx) => (
               <span
                 key={idx}
                 className="s1 px-4 py-2 bg-gray-200 dark:bg-gray-700 rounded-full text-sm font-medium text-gray-700 dark:text-gray-300 transition-colors duration-200 hover:bg-gray-300 dark:hover:bg-gray-600"
