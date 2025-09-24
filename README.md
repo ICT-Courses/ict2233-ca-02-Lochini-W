@@ -17,7 +17,7 @@ A personal portfolio website built with React.js, TailwindCSS, and Vite. This po
   - Animations – Smooth scroll-in animations, hover effects, and subtle decorative pulses(in the home page).
 ---
 
-Live demo link:
+Live demo link: https://ict-courses.github.io/ict2233-ca-02-Lochini-W/ 
 
 ---
 
