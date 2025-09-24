@@ -59,7 +59,7 @@ export default function Home() {
             Hi, I'm Lochini Weerasinghe
           </h1>
           <p className="text-lg sm:text-xl mb-6 text-center text-gray-600 dark:text-gray-300 leading-relaxed dark-toggle2">
-            Aspiring Project Manager dedicated to delivering successful outcomes through strategic planning, team leadership, and stakeholder collaboration.
+            Proficient Project Manager with a passion for Cybersecurity, driving successful projects while exploring secure and innovative tech solutions.
           </p>
           <button
             onClick={() => navigate("/about")}

@@ -54,8 +54,9 @@ export default function About() {
             Introduction
           </h2>
           <p className="leading-relaxed text-base sm:text-lg text-center">
-            Hi, I’m Lochini, a passionate undergraduate aspiring to be a project manager, with experience in leading projects and building responsive, modern applications. 
-            While project management is my primary focus, I aim to broaden my skills and explore other areas of technology and innovation without strapping and limiting myself to one route. 
+            Hi, I’m Lochini, a passionate undergraduate aspiring to be a Project Manager, with experience in leading projects and building responsive, modern applications. 
+            While project management is my primary focus, I am currently proficient in it and also have a strong interest in Cybersecurity. 
+            I aim to broaden my skills in this area, as well as explore other fields of technology and innovation, without limiting myself to a single path. 
             I enjoy learning new tools, solving real-world problems, and creating intuitive, efficient, and impactful digital experiences.
           </p>
         </section>
