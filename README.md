@@ -59,8 +59,3 @@ Notes
 - Background shapes, hero panel effects, and bubble notifications use scoped CSS Modules.
 - All routing uses HashRouter to ensure GitHub Pages compatibility.
 
----
-
-License
-
-This project was created for educational purposes (ICT 2233 Assignment 02, 2025). You are free to explore, learn from it. 
