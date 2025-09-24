@@ -1,0 +1,101 @@
+/* Projects.module.css */
+
+/* Scroll-in animation */
+.show {
+  opacity: 1;
+  transform: translateY(0);
+  transition: transform 0.7s ease-out, opacity 0.7s ease-out;
+}
+
+.hide {
+  opacity: 0;
+  transform: translateY(1.5rem);
+  transition: transform 0.7s ease-out, opacity 0.7s ease-out;
+}
+
+/* Wrapper to hold shape + card */
+.projectWrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Shape behind card */
+.bgShape {
+  position: absolute;
+  inset: 0;
+  border-radius: 12px;
+  z-index: 0;
+  transition: transform 0.7s ease-out;
+}
+
+.projectWrapper:hover .bgShape {
+  transform: scale(1.05);
+}
+
+/* Tilt variations */
+.tiltLeft {
+  transform: rotate(-3deg);
+}
+.tiltRight {
+  transform: rotate(3deg);
+}
+
+/* 5 background colors */
+.bg0 {
+  background-color: #ff9f43;
+}
+.bg1 {
+  background-color: #feca57;
+}
+.bg2 {
+  background-color: #a29bfe;
+}
+.bg3 {
+  background-color: #fd79a8;
+}
+.bg4 {
+  background-color: #55efc4;
+}
+
+/* Ensure card sits above shape */
+.projectWrapper > *:not(.bgShape) {
+  position: relative;
+  z-index: 1;
+}
+
+/* Pop-up speech bubble */
+.bubble {
+  position: absolute;
+  top: -2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  white-space: nowrap;
+  font-size: 0.75rem;
+  z-index: 20;
+}
+
+.bubble::after {
+  content: "";
+  position: absolute;
+  bottom: -0.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 0.5rem;
+  border-style: solid;
+  border-color: #1f2937 transparent transparent transparent; /* Dark mode color */
+}
+
+/* Dark mode bubble arrow color */
+.bubble.dark::after {
+  border-color: #e5e7eb transparent transparent transparent;
+}
+
+@media (prefers-color-scheme: dark) {
+  .bubble::after {
+    border-color: #e5e7eb transparent transparent transparent;
+  }
+}
