@@ -31,11 +31,11 @@ export default function About() {
     { degree: "Schooling", school: "Visakha Vidyalaya", year: "2009 – 2022" },
   ];
 
-  const technicalSkills = ["HTML","CSS","JavaScript","React","TailwindCSS", "C#","SQL Server","Git","Python","Github"];
+  const techSkills = ["HTML","CSS","Python","SQL","PHP","C#","Git","Github","JavaScript-learning","React-learning","TailwindCSS-learning" ];
 
-  const softSkills = ["Public Speaking", "Teamwork & Collaboration", "Problem-Solving", "Adaptability", "Time Management", , , "Conflict Resolution"];
+  const softSkills = ["Public Speaking", "Teamwork & Collaboration", "Problem-Solving", "Adaptability", "Time Management", "Conflict Resolution"];
 
-  const additionalAchievments = [ "Public Speaking","President's Guide","Participate in All Island Poetry Recitation","Winner of Light of Asia"];
+  const additionalAchievments = [ "Public Speaking","President's Guide","All Island Poetry Recitation","Light of Asia"];
 
   return (
     <div className="min-h-screen px-4 py-12 bg-gradient-to-br text-gray-800 dark:text-gray-200">
@@ -53,9 +53,13 @@ export default function About() {
             Introduction
           </h2>
           <p className="leading-relaxed text-base sm:text-lg text-center">
-            Hi, I’m Lochini, a passionate undergraduate who wishes to be a developer with experience in building responsive and modern applications.
-            I enjoy learning new technologies and solving real-world problems through code. My goal is to create intuitive,
-            beautiful, and efficient digital experiences.
+            Hi, I’m Lochini, a passionate undergraduate who wishes to harness computer science through the experiences of building responsive and modern applications.
+            I enjoy learning new technologies and solving real-world problems through code.
+            As of now my goal is to learn to create intuitive, beautiful, and efficient digital experiences.
+            I aspire to become an experienced project manager but I also do not want to limit myself to it and do my best to harness other areas. 
+            Becuase there are so many other interesting areas that I would love to learn
+            A few 'other' of my areas of interest are Cyber security, AI and Blockchain. 
+            Howeverr as an undergraduate I still have much to learn and progress. 
           </p>
         </section>
 
@@ -88,7 +92,7 @@ export default function About() {
             Technical Skills
           </h2>
           <div className="flex flex-wrap gap-2">
-            {technicalSkills.map((skill, idx) => (
+            {techSkills.map((skill, idx) => (
               <span
                 key={idx}
                 className="s1 px-4 py-2 bg-gray-200 dark:bg-gray-700 rounded-full text-sm font-medium text-gray-700 dark:text-gray-300 transition-colors duration-200 hover:bg-gray-300 dark:hover:bg-gray-600"
