@@ -12,7 +12,7 @@ export default function Nav() {
 
   return (
     <nav className="s3 bg-gray-100 dark:bg-gray-800 shadow-md px-6 py-4 flex justify-between items-center">
-      <div className="text-xl font-bold">Lochini</div>
+      <div className="text-xl font-bold pl-4">Lochini Weerasinghe</div>
 
       <div className="flex items-center space-x-4">
         <NavLink
