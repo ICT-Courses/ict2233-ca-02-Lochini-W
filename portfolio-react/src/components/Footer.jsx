@@ -13,6 +13,7 @@ export default function Footer() {
 
         {/* Right Side */}
         <div className="flex items-center gap-6">
+
           {/* Page Links */}
           <div className="flex gap-4">
             <Link to="/" className="hover:text-blue-500 transition">Home</Link>
@@ -26,6 +27,7 @@ export default function Footer() {
             <a href="https://www.linkedin.com/in/buvaneswari-lochini-weerasinghe-296106381/" className="hover:text-blue-700 transition"><FaLinkedin size={24} /></a>
             <a href="mailto:lochini.edenfields@gmail.com" className="hover:text-blue-700 transition"><FaEnvelope size={24} /></a>
           </div>
+          
         </div>
       </div>
     </footer>

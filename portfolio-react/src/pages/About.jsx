@@ -1,4 +1,3 @@
-// About.jsx
 import React, { useEffect, useRef } from "react";
 import styles from "./About.module.css";
 

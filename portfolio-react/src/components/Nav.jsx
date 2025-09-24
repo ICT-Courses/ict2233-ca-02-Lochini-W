@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
-import "./Nav.css"; // your custom CSS for dark mode
+import "./Nav.css"; // custom CSS for dark mode
 
 export default function Nav() {
   const [darkMode, setDarkMode] = useState(false);
